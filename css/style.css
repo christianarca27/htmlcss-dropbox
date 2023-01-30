@@ -1,3 +1,9 @@
+.container-centered {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* nav */
 nav {
     background-color: red;
@@ -27,3 +33,81 @@ nav #nav-left > *, nav #nav-right > * {
     display: block;
 }
 /* /nav */
+
+/* main */
+/* jumbo */
+main #jumbo {
+    background-color: #b4d0e7;
+    height: 500px;
+    /* debug */
+}
+
+main #jumbo #jumbo-inner {
+    background-color: #8ca2b4;
+    height: 100%;
+    /* debug */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+main #jumbo #jumbo-inner > * {
+    background-color: #758897;
+    /* debug */
+}
+
+/* jumbo-bottom */
+main #jumbo #jumbo-inner #jumbo-bottom  {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+
+    flex-grow: 1;
+}
+
+main #jumbo #jumbo-inner #jumbo-bottom > * {
+    background-color: #586772;
+}
+
+/* jumbo-left */
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left {
+    max-width: 40%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left > * {
+    background-color: #3c474e;
+    /* debug */
+}
+
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #go-to-subscriptions-plans {
+    width: 50px;
+    height: 50px;
+    /* debug */
+}
+
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #jumbo-left-inner {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #jumbo-left-inner > * {
+    background-color: #2d353a;
+    /* debug */
+}
+/* /jumbo-left */
+
+/* jumbo-right */
+main #jumbo #jumbo-inner #jumbo-bottom #jumbo-right {
+    margin-bottom: -50px;
+    flex-grow: 1;
+}
+/* /jumbo-right */
+/* /jumbo-bottom */
+/* /jumbo */
+/* /main */
