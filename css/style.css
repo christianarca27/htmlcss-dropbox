@@ -38,8 +38,10 @@ nav #nav-left > *, nav #nav-right > * {
 /* jumbo */
 main #jumbo {
     background-color: #b4d0e7;
-    height: 500px;
+    height: 600px;
     /* debug */
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 main #jumbo #jumbo-inner {
