@@ -172,14 +172,24 @@ main #business-plans .plan-col .plan-col-body > * {
     gap: 20px;
 }
 
-main #business-plans #business-plans-inner .plan-col .plan-col-body ul {
+main #business-plans .plan-col .plan-col-body ul {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
 }
 
-main #business-plans #business-plans-inner .plan-col .plan-col-body hr {
+main #business-plans .plan-col .plan-col-body hr {
     border: 1px solid black;
+}
+
+main #business-plans .plan-col.wide .plan-col-body-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+main #business-plans .plan-col.wide .plan-col-body-wrapper .btn-wrapper {
+    padding: 10px 30px;
 }
 /* /business-plans */
 /* /main */
