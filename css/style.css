@@ -1,3 +1,8 @@
+button.btn-wide {
+    width: 100%;
+    height: 40px;
+}
+
 .container-centered {
     max-width: 1200px;
     margin-left: auto;
@@ -112,4 +117,61 @@ main #jumbo #jumbo-inner #jumbo-bottom #jumbo-right {
 /* /jumbo-right */
 /* /jumbo-bottom */
 /* /jumbo */
+
+/* business-plans */
+main #business-plans .container-centered {
+    padding-top: 100px;
+}
+
+main #business-plans .container-centered ul#type-of-sub {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 40px;
+}
+
+main #business-plans .container-centered #business-plans-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col {
+    border: 1px solid black;
+    /* debug */
+    width: 30%;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-header {
+    border-bottom: 1px solid black;
+    /* debug */
+    padding: 10px 0;
+
+    text-align: center;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body {
+    padding: 40px 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body > * {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body hr {
+    border: 1px solid black;
+}
+/* /business-plans */
 /* /main */
