@@ -1,0 +1,29 @@
+/* nav */
+nav {
+    background-color: red;
+    height: 10vh;
+    /* debug */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #nav-left, nav #nav-right {
+    background-color: darkred;
+    /* debug */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav #nav-left > *, nav #nav-right > * {
+    background-color: green;
+    width: 40px;
+    height: 20px;
+    /* debug */
+    display: block;
+}
+/* /nav */
