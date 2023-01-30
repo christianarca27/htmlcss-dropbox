@@ -119,30 +119,38 @@ main #jumbo #jumbo-inner #jumbo-bottom #jumbo-right {
 /* /jumbo */
 
 /* business-plans */
-main #business-plans .container-centered {
+main #business-plans {
     padding-top: 100px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
 }
 
-main #business-plans .container-centered ul#type-of-sub {
+main #business-plans ul#type-of-sub {
     display: flex;
     flex-flow: row nowrap;
     gap: 40px;
 }
 
-main #business-plans .container-centered #business-plans-inner {
+main #business-plans #business-plans-inner {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col {
+main #business-plans .plan-col {
     border: 1px solid black;
     /* debug */
     width: 30%;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-header {
+main #business-plans .plan-col.wide {
+    width: 100%;
+}
+
+main #business-plans .plan-col .plan-col-header {
     border-bottom: 1px solid black;
     /* debug */
     padding: 10px 0;
@@ -150,7 +158,7 @@ main #business-plans .container-centered #business-plans-inner .plan-col .plan-c
     text-align: center;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body {
+main #business-plans .plan-col .plan-col-body {
     padding: 40px 20px;
 
     display: flex;
@@ -158,19 +166,19 @@ main #business-plans .container-centered #business-plans-inner .plan-col .plan-c
     gap: 40px;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body > * {
+main #business-plans .plan-col .plan-col-body > * {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body ul {
+main #business-plans #business-plans-inner .plan-col .plan-col-body ul {
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
 }
 
-main #business-plans .container-centered #business-plans-inner .plan-col .plan-col-body hr {
+main #business-plans #business-plans-inner .plan-col .plan-col-body hr {
     border: 1px solid black;
 }
 /* /business-plans */
