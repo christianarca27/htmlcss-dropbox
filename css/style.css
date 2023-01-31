@@ -172,8 +172,6 @@ main #business-plans ul#radio-buttons {
 }
 
 main #business-plans ul#radio-buttons li span.radio-button {
-    /* background-color: red; */
-    /* debug */
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -183,8 +181,6 @@ main #business-plans ul#radio-buttons li span.radio-button {
 }
 
 main #business-plans ul#radio-buttons li:first-of-type span.radio-button {
-    /* background-color: red; */
-    /* debug */
     display: inline-block;
     width: 1em;
     height: 1em;
