@@ -145,6 +145,10 @@ nav #nav-left #logo-nav {
 
 /* main */
 /* business-plans */
+main #business-plans {
+    margin-bottom: 150px;
+}
+
 main #business-plans > * {
     margin-bottom: 2em;
 }
@@ -299,6 +303,15 @@ main #partner {
 
     display: flex;
     gap:  50px;
+}
+
+main #partner #partner-left {
+    min-width: 60%;
+}
+
+main #partner #partner-left img {
+    width: 100%;
+    height: auto;
 }
 
 main #partner #partner-right {
