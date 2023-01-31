@@ -2,11 +2,6 @@ body {
     font-family: sans-serif;
 }
 
-a {
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
-}
-
 button.btn {
     padding: 0.8em 1em;
 }
@@ -29,6 +24,11 @@ nav {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
 
 nav #nav-left, nav #nav-right {
@@ -73,8 +73,13 @@ nav #nav-left #logo-nav {
 /* jumbo */
 #jumbo {
     background-color: #b4d0e7;
-    /* debug */
     padding-top: 100px;
+    margin-bottom: 150px;
+}
+
+#jumbo a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
 
 #jumbo #jumbo-inner {
@@ -133,77 +138,151 @@ nav #nav-left #logo-nav {
 
 /* main */
 /* business-plans */
-main #business-plans {
-    padding-top: 100px;
-
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 50px;
+main #business-plans > * {
+    margin-bottom: 2em;
 }
 
-main #business-plans ul#type-of-sub {
+main #business-plans h2 {
+    font-size: 2em;
+}
+
+main #business-plans ul#radio-buttons {
+    margin-bottom: 2em;
+
     display: flex;
     flex-flow: row nowrap;
     gap: 40px;
+
+    list-style: none;
+    padding-inline-start: 0;
 }
 
-main #business-plans #business-plans-inner {
+main #business-plans ul#radio-buttons li span.radio-button {
+    /* background-color: red; */
+    /* debug */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+main #business-plans ul#radio-buttons li:first-of-type span.radio-button {
+    /* background-color: red; */
+    /* debug */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+
+    border: 4px solid #0061ff;
+    border-radius: 50%;
+}
+
+main #business-plans .business-plans-row {
+    width: 100%;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
+    gap: 20px;
 }
 
-main #business-plans .plan-col {
-    border: 1px solid black;
-    /* debug */
-    width: 30%;
+main #business-plans .business-plans-row .business-plan-col {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* width: 30%; */
 }
 
-main #business-plans .plan-col.wide {
-    width: 100%;
-}
-
-main #business-plans .plan-col .plan-col-header {
-    border-bottom: 1px solid black;
-    /* debug */
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-header {
     padding: 10px 0;
-
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-main #business-plans .plan-col .plan-col-body {
-    padding: 40px 20px;
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body {
+    padding: 50px;
 
     display: flex;
     flex-flow: column nowrap;
-    gap: 40px;
+    flex-grow: 1;
 }
 
-main #business-plans .plan-col .plan-col-body > * {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 20px;
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
 }
 
-main #business-plans .plan-col .plan-col-body ul {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 20px;
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body .plan-price {
+    margin-bottom: 1em;
 }
 
-main #business-plans .plan-col .plan-col-body hr {
-    border: 1px solid black;
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body .plan-duration {
+    margin-bottom: 3em;
+    color: rgba(0, 0, 0, 0.7);
 }
 
-main #business-plans .plan-col.wide .plan-col-body-wrapper {
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body ul {
+    margin-bottom: 2em;
+
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body ul li {
+    margin-left: -0.3em;
+    margin-bottom: 1em;
+
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    gap: 0.5em;
 }
 
-main #business-plans .plan-col.wide .plan-col-body-wrapper .btn-wrapper {
-    padding: 10px 30px;
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body button {
+    margin-bottom: 2em;
+}
+
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body .buy-link {
+    margin-bottom: 2em;
+}
+
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body hr {
+    margin-bottom: 3em;
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body h4 {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+main #business-plans .business-plans-row .business-plan-col .business-plan-col-body ul.main-feature li i {
+    color: #0061ff;
+}
+
+main #business-plans .business-plans-row:last-of-type .business-plan-col {
+    width: 100%;
+}
+
+main #business-plans .business-plans-row:last-of-type .business-plan-col .business-plan-col-body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main #business-plans .business-plans-row:last-of-type .business-plan-col .business-plan-col-body .business-plan-col-body-left {
+    max-width: 70%;
+    padding-right: 25px;
+}
+
+main #business-plans .business-plans-row:last-of-type .business-plan-col .business-plan-col-body .business-plan-col-body-right {
+    padding-left: 25px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+
+    flex-grow: 1;
 }
 /* /business-plans */
 /* /main */
