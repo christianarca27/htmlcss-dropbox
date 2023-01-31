@@ -385,8 +385,6 @@ main #customers #brands-grid {
 }
 
 main #customers #brands-grid .brands-col {
-    border: 1px solid black;
-    /* debug */
     width: calc(100vw / 3);
     height: calc(100vw / 3);
 
@@ -394,11 +392,75 @@ main #customers #brands-grid .brands-col {
     flex-flow: row wrap;
 }
 
-main #customers #brands-grid .brand-square {
-    border: 1px solid black;
-    /* debug */
+main #customers #brands-grid .brands-col .brand-square {
     width: calc(100% / 2);
     height: calc(100% / 2);
+    padding: 60px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(1) .brand-square:nth-of-type(1) {
+    border: 15px solid #d1e9cd;
+    background-color: #a2d39b;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(1) .brand-square:nth-of-type(2) {
+    background-color: #61082b;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(1) .brand-square:nth-of-type(3) {
+    background-color: #0093ce;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(1) .brand-square:nth-of-type(4) {
+    background-color: #ff1c1c;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(3) .brand-square:nth-of-type(1) {
+    background-color: #d5001f;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(3) .brand-square:nth-of-type(2) {
+    background-color: #b4d0e7;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(3) .brand-square:nth-of-type(3) {
+    background-color: #0d2481;
+}
+
+main #customers #brands-grid .brands-col:nth-of-type(3) .brand-square:nth-of-type(4) {
+    background-color: #ffd830;
+}
+
+main #customers #brands-grid .brands-col .brand-square img {
+    width: 100%;
+    height: auto;
+
+    filter: invert(1);
+}
+
+main #customers #brands-grid .brands-col#selected-brand {
+    background-color: #f5f5f5;
+    padding: 50px;
+
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+main #customers #brands-grid .brands-col#selected-brand img {
+    height: 20%;
+    width: auto;
+}
+
+main #customers #brands-grid .brands-col#selected-brand hr {
+    width: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 main #customers #trial {
