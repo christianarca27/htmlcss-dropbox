@@ -205,7 +205,7 @@ main #business-plans .business-plans-row {
 
 main #business-plans .business-plans-row .business-plan-col {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    /* width: 30%; */
+    width: 30%;
 }
 
 main #business-plans .business-plans-row .business-plan-col .business-plan-col-header {
@@ -216,7 +216,7 @@ main #business-plans .business-plans-row .business-plan-col .business-plan-col-h
 }
 
 main #business-plans .business-plans-row .business-plan-col .business-plan-col-body {
-    padding: 50px;
+    padding: 25px;
 
     display: flex;
     flex-flow: column nowrap;
