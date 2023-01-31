@@ -309,7 +309,7 @@ main #partner {
 }
 
 main #partner #partner-left {
-    min-width: 60%;
+    min-width: 50%;
 }
 
 main #partner #partner-left img {
@@ -318,7 +318,7 @@ main #partner #partner-left img {
 }
 
 main #partner #partner-right {
-    padding-right: 100px;
+    padding-right: 60px;
 }
 
 main #partner #partner-right h3 {
