@@ -573,4 +573,8 @@ footer #footer-inner hr {
     margin-bottom: 50px;
     border: 1px solid white;
 }
+
+footer #lang-selector {
+    color: #999999;
+}
 /* /footer */
