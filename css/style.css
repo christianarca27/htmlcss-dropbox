@@ -315,6 +315,10 @@ main #partner #partner-right p {
 /* /partner */
 
 /* features */
+main #features {
+    margin-bottom: 200px;
+}
+
 main #features h3 {
     margin-bottom: 2em;
     font-size: 2em;
@@ -345,4 +349,68 @@ main #features  ul li.feature h4 {
     font-size: 1.5em;
 }
 /* /features */
+
+/* customers */
+main #customers .container-centered h3 {
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+main #customers .container-centered a {
+    display: block;
+    margin-bottom: 6em;
+}
+
+main #customers #brands-grid {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main #customers #brands-grid .brands-col {
+    border: 1px solid black;
+    /* debug */
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main #customers #brands-grid .brand-square {
+    border: 1px solid black;
+    /* debug */
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+}
+
+main #customers #trial {
+    background-color: #B4D0E7;
+}
+
+main #customers #trial #trial-inner {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main #customers #trial #trial-inner #trial-inner-left{
+    max-width: 70%;
+    padding-right: 300px;
+}
+
+
+main #customers #trial #trial-inner #trial-inner-left h4 {
+    font-size: 2em;
+    color: #61082B;
+}
+
+main #customers #trial #trial-inner #trial-inner-right{
+    flex-grow: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* /customers */
 /* /main */
