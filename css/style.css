@@ -372,12 +372,16 @@ main #customers {
     margin-bottom: 150px;
 }
 
-main #customers .container-centered h3 {
+main #customers #customers-top {
+    padding-right: 500px;
+}
+
+main #customers #customers-top h3 {
     margin-bottom: 2em;
     font-size: 2em;
 }
 
-main #customers .container-centered a {
+main #customers #customers-top a {
     display: block;
     margin-bottom: 6em;
 }
