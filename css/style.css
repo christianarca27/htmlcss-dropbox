@@ -3,12 +3,12 @@ body {
 }
 
 a {
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
 }
 
 button.btn {
-    padding: 1em 1.2em;
+    padding: 0.8em 1em;
 }
 
 button.btn-blue {
@@ -24,9 +24,7 @@ button.btn-blue {
 
 /* nav */
 nav {
-    background-color: red;
-    height: 10vh;
-    /* debug */
+    height: 80px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -34,21 +32,41 @@ nav {
 }
 
 nav #nav-left, nav #nav-right {
-    background-color: darkred;
-    /* debug */
+    height: 100%;
+}
+
+nav #nav-left ul, nav #nav-right ul {
+    height: 100%;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    list-style: none;
+    padding-inline-start: 0;
 }
 
-nav #nav-left > *, nav #nav-right > * {
-    background-color: green;
-    width: 40px;
-    height: 20px;
-    /* debug */
-    display: block;
+nav #nav-left ul li, nav #nav-right ul li {
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+nav #nav-left ul li a,  nav #nav-right ul li a {
+    height: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+nav #nav-left #logo-nav {
+    height: 100%;
+    width: auto;
 }
 /* /nav */
 
