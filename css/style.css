@@ -1,6 +1,19 @@
-button.btn-wide {
-    width: 100%;
-    height: 40px;
+body {
+    font-family: sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button.btn {
+    padding: 1em 1.2em;
+}
+
+button.btn-blue {
+    background-color: #0061ff;
+    color: white;
 }
 
 .container-centered {
@@ -39,85 +52,68 @@ nav #nav-left > *, nav #nav-right > * {
 }
 /* /nav */
 
-/* main */
 /* jumbo */
-main #jumbo {
+#jumbo {
     background-color: #b4d0e7;
-    height: 600px;
     /* debug */
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 100px;
 }
 
-main #jumbo #jumbo-inner {
-    background-color: #8ca2b4;
-    height: 100%;
-    /* debug */
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 50px;
+#jumbo #jumbo-inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main #jumbo #jumbo-inner > * {
-    background-color: #758897;
-    /* debug */
+#jumbo #jumbo-inner h1 {
+    margin-bottom: 70px;
+    font-size: 5em;
 }
 
 /* jumbo-bottom */
-main #jumbo #jumbo-inner #jumbo-bottom  {
+#jumbo #jumbo-inner #jumbo-bottom  {
     display: flex;
     flex-flow: row nowrap;
-    gap: 20px;
-
-    flex-grow: 1;
-}
-
-main #jumbo #jumbo-inner #jumbo-bottom > * {
-    background-color: #586772;
 }
 
 /* jumbo-left */
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left {
-    max-width: 40%;
+#jumbo #jumbo-inner #jumbo-bottom #jumbo-left {
+    max-width: calc(100% / 3);
+    padding-right: 35px;
+    padding-bottom: 20px;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
 
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left > * {
-    background-color: #3c474e;
-    /* debug */
-}
-
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #go-to-subscriptions-plans {
-    width: 50px;
-    height: 50px;
-    /* debug */
-}
-
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #jumbo-left-inner {
+#jumbo #jumbo-inner #jumbo-bottom #jumbo-left #jumbo-left-top {
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 35px;
 }
 
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-left #jumbo-left-inner > * {
-    background-color: #2d353a;
-    /* debug */
+#jumbo #jumbo-inner #jumbo-bottom #jumbo-left .fa-arrow-down {
+    font-size: 3em;
 }
 /* /jumbo-left */
 
 /* jumbo-right */
-main #jumbo #jumbo-inner #jumbo-bottom #jumbo-right {
-    margin-bottom: -50px;
+#jumbo #jumbo-inner #jumbo-bottom #jumbo-right {
+    margin-bottom: -70px;
     flex-grow: 1;
+}
+
+#jumbo #jumbo-inner #jumbo-bottom #jumbo-right img {
+    width: 100%;
+    height: auto;
 }
 /* /jumbo-right */
 /* /jumbo-bottom */
 /* /jumbo */
 
+/* main */
 /* business-plans */
 main #business-plans {
     padding-top: 100px;
