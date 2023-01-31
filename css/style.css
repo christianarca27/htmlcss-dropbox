@@ -351,6 +351,10 @@ main #features  ul li.feature h4 {
 /* /features */
 
 /* customers */
+main #customers {
+    margin-bottom: 150px;
+}
+
 main #customers .container-centered h3 {
     margin-bottom: 2em;
     font-size: 2em;
@@ -413,4 +417,33 @@ main #customers #trial #trial-inner #trial-inner-right{
     flex-flow: column nowrap;
 }
 /* /customers */
+
+/* faq */
+main #faq {
+    margin-bottom: 150px;
+}
+
+main #faq h3 {
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+main #faq ul.question {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+main #faq ul.question li {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* /faq */
 /* /main */
