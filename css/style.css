@@ -408,7 +408,6 @@ main #customers #brands-grid .brands-col {
 main #customers #brands-grid .brands-col .brand-square {
     width: calc(100% / 2);
     height: calc(100% / 2);
-    padding: 60px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -417,7 +416,7 @@ main #customers #brands-grid .brands-col .brand-square {
 }
 
 main #customers #brands-grid .brands-col:nth-of-type(1) .brand-square:nth-of-type(1) {
-    border: 15px solid #d1e9cd;
+    border: 1vw solid #d1e9cd;
     background-color: #a2d39b;
 }
 
@@ -450,7 +449,7 @@ main #customers #brands-grid .brands-col:nth-of-type(3) .brand-square:nth-of-typ
 }
 
 main #customers #brands-grid .brands-col .brand-square img {
-    width: 100%;
+    width: 60%;
     height: auto;
 
     filter: invert(1);
@@ -464,6 +463,8 @@ main #customers #brands-grid .brands-col#selected-brand {
     justify-content: start;
     align-items: flex-start;
     gap: 50px;
+
+    overflow-y: auto;
 }
 
 main #customers #brands-grid .brands-col#selected-brand img {
