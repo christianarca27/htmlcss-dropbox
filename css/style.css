@@ -617,6 +617,10 @@ footer #footer-inner #footer-top .link-list ul li a {
     text-decoration: none;
 }
 
+footer #footer-inner #footer-top .link-list ul li a:hover {
+    text-decoration: underline;
+}
+
 footer #footer-inner hr {
     width: 10%;
     margin-bottom: 50px;
