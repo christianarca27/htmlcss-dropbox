@@ -530,6 +530,41 @@ main #faq ul.question li {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
+main #faq ul.question li .question-left {
+    padding-right: 300px;
+}
+
+main #faq ul.question li .question-left p.answer {
+    margin-top: 2em;
+    display: none;
+}
+
+main #faq ul.question li:hover .question-left p.answer {
+    display: block;
+}
+
+main #faq ul.question li .question-right {
+    position: relative;
+}
+
+main #faq ul.question li .question-right span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main #faq ul.question li .question-right span:last-of-type {
+    display: none;
+}
+
+main #faq ul.question li:hover .question-right span:first-of-type {
+    display: none;
+}
+
+main #faq ul.question li:hover .question-right span:last-of-type {
+    display: block;
+}
 /* /faq */
 /* /main */
 
