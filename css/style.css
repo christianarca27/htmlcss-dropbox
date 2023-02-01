@@ -52,6 +52,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a.underlined-hover:hover {
+    border-bottom: 3px solid #0061ff;
+}
+
 nav #nav-left, nav #nav-right {
     height: 100%;
 }
