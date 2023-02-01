@@ -587,21 +587,21 @@ main #faq ul.question li .question-right {
     position: relative;
 }
 
-main #faq ul.question li .question-right span {
+main #faq ul.question li .question-right i {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-main #faq ul.question li .question-right span:last-of-type {
+main #faq ul.question li .question-right i.fa-chevron-up {
     display: none;
 }
 
-main #faq ul.question li:hover .question-right span:first-of-type {
+main #faq ul.question li:hover .question-right i.fa-chevron-down {
     display: none;
 }
 
-main #faq ul.question li:hover .question-right span:last-of-type {
+main #faq ul.question li:hover .question-right i.fa-chevron-up {
     display: block;
 }
 /* /faq */
