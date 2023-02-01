@@ -117,6 +117,10 @@ nav #nav-left #logo-nav {
     text-decoration: none;
 }
 
+#jumbo a:hover {
+    text-decoration: underline;
+}
+
 #jumbo #jumbo-inner {
 }
 
