@@ -652,4 +652,12 @@ footer #footer-inner hr {
 footer #lang-selector {
     color: #999999;
 }
+
+footer #lang-selector:hover {
+    cursor: pointer;
+}
+
+footer #lang-selector:hover span {
+    text-decoration: underline;
+}
 /* /footer */
