@@ -208,6 +208,7 @@ main #business-plans ul#radio-buttons {
 main #business-plans ul#radio-buttons li {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     gap: 5px;
 }
 
