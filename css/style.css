@@ -210,6 +210,10 @@ main #business-plans ul#radio-buttons li {
     gap: 5px;
 }
 
+main #business-plans ul#radio-buttons li:hover {
+    cursor: pointer;
+}
+
 main #business-plans ul#radio-buttons li span.radio-button {
     display: inline-block;
     width: 1em;
