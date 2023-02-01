@@ -10,6 +10,10 @@ button.btn {
     padding: 0.8em 1em;
 }
 
+button.btn:hover {
+    cursor: pointer;
+}
+
 button.btn-blue {
     background-color: #0061ff;
     border: 1px solid #0061ff;
@@ -19,7 +23,6 @@ button.btn-blue {
 button.btn-blue:hover {
     background-color: #3b7aff;
     border-color: #3b7aff;
-    cursor: pointer;
 }
 
 button.btn-white {
